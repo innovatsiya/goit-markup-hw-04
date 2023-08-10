@@ -5,13 +5,13 @@
 }
 
 :root {
-  --btn-color: #F4F4FD;
-  --btn-text-color: #4D5AE5;
-  --main-color: #FFFFFF;
-  --link-title-color: #2E2F42;
+  --btn-color: #f4f4fd;
+  --btn-text-color: #4d5ae5;
+  --main-color: #ffffff;
+  --link-title-color: #2e2f42;
   --main-text-color: #434455;
-  --hover-color: #404BBF;
-  --border-btn-cl: #E7E9FC;
+  --hover-color: #404bbf;
+  --border-btn-cl: #e7e9fc;
 }
 
 body {
@@ -68,7 +68,7 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-  }
+}
 
 .header {
   margin: 0;
@@ -86,7 +86,7 @@ img {
   gap: 40px;
 }
 
-  /* .header-items + .header-items {
+/* .header-items + .header-items {
     margin-left: 40px;
   } */
 
@@ -123,7 +123,7 @@ img {
   font-style: normal;
 }
 
-.address-list{
+.address-list {
   display: flex;
   gap: 40px;
 }
@@ -155,6 +155,14 @@ img {
   text-align: center;
   margin: 0;
   background-color: var(--link-title-color);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-box {
@@ -218,7 +226,7 @@ img {
   background-color: var(--hover-color);
   color: var(--main-color);
   border-color: var(--hover-color);
-  border: 1px solid transparent ;
+  border: 1px solid transparent;
 }
 
 .link-logo {
@@ -257,7 +265,21 @@ img {
 }
 
 .benefits-items {
-  flex-basis: calc((100% - 3*24px) / 4);
+  flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.benefits-icons-cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  background: var(--btn-color);
+}
+
+.benefits-icons {
 }
 
 .benefits-items-name {
@@ -297,7 +319,6 @@ img {
 
 .section-services {
   padding-bottom: 120px;
-
 }
 
 .section-team {
@@ -350,6 +371,38 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+}
+
+.section-customers {
+  padding: 120px 0 120px;
+  background-color: var(--main-color);
+}
+
+.customers-title {
+  padding-bottom: 72px;
+  color: var(--link-title-color);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+
+.customers-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.customers-items {
+  display: flex;
+  width: 168px;
+  height: 88px;
+}
+
+.customers-icons {
 }
 
 .footer {
