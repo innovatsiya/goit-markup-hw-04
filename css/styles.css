@@ -13,6 +13,8 @@
   --hover-color: #404bbf;
   --border-btn-cl: #e7e9fc;
   --icons-color: #4d5ae5;
+  --grey-color: #8e8f99;
+  --ocean-color: #31D0AA;
 }
 
 body {
@@ -270,11 +272,12 @@ img {
 }
 
 .benefits-icons-cover {
+  width: 264px;
+  height: 112px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 264px;
-  height: 112px;
+  gap: 24px;
   margin-bottom: 8px;
   border-radius: 4px;
   background: var(--btn-color);
@@ -384,21 +387,28 @@ img {
   gap: 24px;
 }
 
-.team-soc-top {
+.team-soc-links {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   background-color: var(--icons-color);
+  cursor: pointer;
+}
+
+.team-soc-links:hover,
+.team-soc-links:focus {
+  background-color: var(--hover-color);
 }
 
 .team-soc-items {
+  width: 40px;
+  height: 40px;
 }
 .team-social-icons {
-  fill: #f4f4fd;
-  border: 50%;
+  fill: var(--btn-color);
 }
 
 .section-customers {
@@ -425,13 +435,36 @@ img {
 }
 
 .customers-items {
-  display: flex;
   width: 168px;
   height: 88px;
 }
 
-.customers-icons {
+.customers-icons-links {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid var(--grey-color);
+  color: var(--grey-color);
+  cursor: pointer;
 }
+
+.customers-icons-links:hover,
+.customers-icons-links:focus {
+  border: 1px solid var(--hover-color);
+  color: var(--hover-color);
+}
+
+.customers-icons {
+  fill: currentColor;
+}
+
+/* .customers-icons:hover,
+.customers-icons:focus {
+  fill: var(--hover-color);
+} */
 
 .footer {
   padding-top: 100px;
@@ -447,8 +480,52 @@ img {
   color: var(--btn-color);
 }
 
+.footer-soc-title {
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  color: var(--main-color);
+}
+
+.footer-soc-list {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-soc-items {
+  width: 40px;
+  height: 40px;
+  color: var(--btn-color);
+}
+
+.footer-soc-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--icons-color);
+  cursor: pointer;
+}
+
+.footer-soc-links:hover, .footer-soc-links:focus {
+  background-color: var(--ocean-color);
+}
+
+.footer-soc-icons {
+  fill: var(--btn-color);
+}
+
+.footer-wrap {
+  display: flex;
+  gap: 120px;
+}
+
 .main-portfolio {
-  background: var(--main-color);
+  background-color: var(--main-color);
   padding-top: 96px;
   padding-bottom: 120px;
 }
