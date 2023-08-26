@@ -1,9 +1,3 @@
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 :root {
   --btn-color: #f4f4fd;
   --btn-text-color: #4d5ae5;
