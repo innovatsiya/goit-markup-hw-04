@@ -571,11 +571,9 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-links {
-}
 
-.portfolio-links:hover .portfolio-cover-text,
-.portfolio-links:focus .portfolio-cover-text {
+.portfolio-list-icons:hover .portfolio-cover-text,
+.portfolio-list-icons:focus .portfolio-cover-text {
   transform: translateY(0);
 }
 
